@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переработка вейпов в паяльники</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Проект: Переработка вейпов в паяльники</h1>
+    </header>
+    <section>
+        <h2>О проекте</h2>
+        <p>Дайте вашим старым вейпам вторую жизнь, превратив их в полезные паяльные инструменты. Присоединяйтесь к нам в сокращении электронных отходов через креативную переработку.</p>
+    </section>
+    <section class="images">
+        <div class="image-container">
+            <h3>Вейп</h3>
+            <img src="{{ url_for('static', filename='vape.png') }}" alt="Вейп" class="image">
+        </div>
+        <div class="image-container">
+            <h3>Паяльник</h3>
+            <img src="{{ url_for('static', filename='soldering_iron.png') }}" alt="Паяльник" class="image">
+        </div>
+    </section>
+    <footer>
+        <p>Контакты: KorotkijDm@gmail.com</p>
+    </footer>
+</body>
+</html>
