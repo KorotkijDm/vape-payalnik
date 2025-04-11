@@ -13,31 +13,12 @@ header {
 }
 
 section {
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.images {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
-.image-container {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.image-container img {
-    width: 100%;  /* Растягивает картинку по ширине контейнера */
-    height: 450px; /* Устанавливает фиксированную высоту */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
 }
 
 footer {
@@ -45,4 +26,40 @@ footer {
     padding: 10px;
     background: #333;
     color: white;
+}
+
+/* Вертикальная галерея */
+
+.vertical-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+.item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.item p {
+    text-align: left;
+    font-size: 1.1em;
+    margin: 0;
 }

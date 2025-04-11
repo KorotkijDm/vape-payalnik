@@ -10,20 +10,34 @@
     <header>
         <h1>Проект: Переработка вейпов в паяльники</h1>
     </header>
+
     <section>
         <h2>О проекте</h2>
-        <p>Дайте вашим старым вейпам вторую жизнь, превратив их в полезные паяльные инструменты. Присоединяйтесь к нам в сокращении электронных отходов через креативную переработку.</p>
+        <p>
+            Мы превращаем устаревшие вейпы в полезные инструменты, такие как паяльники.
+            <br><br>
+            Дайте вашим старым вейпам вторую жизнь, превратив их в полезные паяльные инструменты. 
+            Присоединяйтесь к нам в сокращении электронных отходов через креативную переработку.
+        </p>
     </section>
-    <section class="images">
-        <div class="image-container">
-            <h3>Вейп</h3>
-            <img src="{{ url_for('static', filename='vape.png') }}" alt="Вейп" class="image">
-        </div>
-        <div class="image-container">
-            <h3>Паяльник</h3>
-            <img src="{{ url_for('static', filename='soldering_iron.png') }}" alt="Паяльник" class="image">
+
+    <section>
+        <div class="vertical-gallery">
+            <div class="item">
+                <img src="{{ url_for('static', filename='vape1.jpg') }}" alt="Вейп 1">
+                <p>Многоразовый разобранный вейп</p>
+            </div>
+            <div class="item">
+                <img src="{{ url_for('static', filename='vape2.jpg') }}" alt="Вейп 2">
+                <p>Одноразовый разобранный вейп</p>
+            </div>
+            <div class="item">
+                <img src="{{ url_for('static', filename='solder.jpg') }}" alt="Паяльник">
+                <p>Готовые паяльники из вейпов</p>
+            </div>
         </div>
     </section>
+
     <footer>
         <p>Контакты: KorotkijDm@gmail.com</p>
     </footer>
